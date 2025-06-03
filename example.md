@@ -9,7 +9,9 @@ data transformation after ingestion.)
 
 Now for some [example
 text](https://en.wikipedia.org/wiki/Major-General's_Song#Lyrics) (quoted on
-2025/06/03):
+2025/06/03).
+Note that the `typst` PDF conversion tool used by `pandoc` is not handling
+block quote line breaks well, nor providing tooltips for links:
 
 > I am the very model of a modern [Major-Gineral](https://en.wikipedia.org/wiki/Major_general_(United_Kingdom)),<a href="#" title='Gilbert wrote "Gineral", which rhymes with mineral.'><sup>[a]</sup></a> <br>
 > I've information [vegetable, animal, and mineral](https://en.wikipedia.org/wiki/Linnaean_taxonomy), <br>
