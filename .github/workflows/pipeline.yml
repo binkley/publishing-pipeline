@@ -43,3 +43,7 @@ jobs:
       - name: Upload PDF to GCS
         run: |
           gsutil cp example.pdf gs://github-publishing-pipeline/example.pdf
+
+      - name: Ensure bucket is public
+        run: |
+          gsutil iam ch allUsers:objectViewer gs://github-publishing-pipeline
