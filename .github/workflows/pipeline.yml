@@ -24,7 +24,7 @@ jobs:
 
       - name: Generate PDF
         run: |
-            pandoc example.md --output=example.pdf --pdf-engine=typst
+          pandoc example.md --output=example.pdf --pdf-engine=typst
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4
