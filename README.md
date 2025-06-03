@@ -21,6 +21,6 @@ See [the pipeline steps in YAML](./.github/workflows.ci.yml).
 ## TODO
 
 - Containerize the build (such as with [Earthly](https://earthly.dev/))
-- Ingest from a cloud bucket
 - Save results in a cloud bucket
-- Transform data in a clould function
+- Ingest from a cloud bucket
+- Transform data in a cloud function
