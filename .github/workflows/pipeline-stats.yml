@@ -1,0 +1,19 @@
+name: pipeline-stats
+
+on:
+  workflow_run:
+    workflows:
+      - 'pipeline.yml'
+    types:
+      - completed
+
+jobs:
+  post-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post stats
+        uses: 'getoslash/github-build-stats-action@latest'
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          workflowId: pipeline.yml
+          pullRequest: ${{ github.event.number }}
