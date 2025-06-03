@@ -21,6 +21,14 @@ See [the published PDF conversion in GCP](https://storage.googleapis.com/github-
 See [the pipeline steps in YAML](./.github/workflows/pipeline.yml), or keep
 reading for diagrams.
 
+[The Markdown file](./example.md) to convert to PDF is a well-known quote of
+Gilbert &amp; Sullivan popular as an example text.
+
+> [!NOTE]
+> Aside &mdash; `pandoc` in the pipeline does a poor job for PDF conversion
+> given the complexity of the Wikipedia source, but GitHub renders well enough
+> in the web (including amusing in-source link tooltips).
+
 ### In pictures
 
 ```mermaid
