@@ -23,5 +23,6 @@ See [the published PDF conversion in GCP](https://storage.googleapis.com/github-
 ## TODO
 
 - Containerize the build (such as with [Earthly](https://earthly.dev/))
+- Transform data in a cloud function <-- Next local project work
 - Ingest from a cloud bucket
-- Transform data in a cloud function
+- Sign docs in the buckets to build user trust
