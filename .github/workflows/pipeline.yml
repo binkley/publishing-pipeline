@@ -31,10 +31,3 @@ jobs:
         with:
           name: example
           path: example.pdf
-
-      - name: Trigger build stats action
-        uses: peter-evans/repository-dispatch@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          event-type: trigger-stats
-          client-payload: '{"pull_request": {"number": "${{ github.event.number }}"}}'
