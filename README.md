@@ -9,3 +9,18 @@ align="right" width="10%" height="auto"/>
 [![pull requests](https://img.shields.io/github/issues-pr/binkley/publishing-pipeline.svg)](https://github.com/binkley/publishing-pipeline/pulls)
 [![issues](https://img.shields.io/github/issues/binkley/publishing-pipeline.svg)](https://github.com/binkley/publishing-pipeline/issues/)
 [![license](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/public-domain/cc0/)
+
+## Workflow
+
+1. Ingest markdown from project repository.
+2. Transform markdown to PDF.
+3. Save results as a repository artifact.
+
+See [the pipeline steps in YAML](./.github/workflows.ci.yml).
+
+## TODO
+
+- Containerize the build (such as with [Earthly](https://earthly.dev/))
+- Ingest from a cloud bucket
+- Save results in a cloud bucket
+- Transform data in a clould function
