@@ -20,6 +20,7 @@ block quote line breaks well, nor providing tooltips for links:
 > I'm very well acquainted, too, with matters mathematical, <br>
 > I understand equations, both the [simple](https://en.wikipedia.org/wiki/Linear_equation) and [quadratical](https://en.wikipedia.org/wiki/Quadratic_equation), <br>
 > About [binomial theorem](https://en.wikipedia.org/wiki/Binomial_theorem) I'm teeming with a lot o' news, <br>
+> _Lot o' news, lot o' news ... ah ... (added in historic performances)_ <br>
 > With many cheerful facts about [the square of the hypotenuse](https://en.wikipedia.org/wiki/Pythagorean_theorem).
 
 (Truly this example is Wikipedia editors torturing HTML writers, and showing
