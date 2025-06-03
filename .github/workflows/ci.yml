@@ -1,0 +1,33 @@
+name: Convert Markdown to PDF
+
+on:
+  push:
+    paths-ignore:
+      - 'README.md'
+  pull_request:
+    paths-ignore:
+      - 'README.md'
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install missing tools
+        run: |
+          sudo apt update
+          sudo apt install git pandoc
+          sudo snap install typst
+
+      - name: Checkout main repo
+        uses: actions/checkout@v4
+
+      - name: Generate PDF
+        run: |
+            pandoc example.md --output=example.pdf --pdf-engine=typst
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: example
+          path: example.pdf
