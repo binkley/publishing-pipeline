@@ -20,6 +20,43 @@ align="right" width="10%" height="auto"/>
 See [the pipeline steps in YAML](./.github/workflows/pipeline.yml). <br>
 See [the published PDF conversion in GCP](https://storage.googleapis.com/github-publishing-pipeline/example.pdf).
 
+### In pictures
+
+```mermaid
+flowchart LR
+    Ingestion --> Transformation --> Storage
+```
+This is a grossly high-level view.
+With details from the GitHub workflow:
+
+```mermaid
+flowchart LR
+    subgraph GitHub Orchestration 
+        subgraph Google Cloud
+            GCP_Install[Install tooling]
+            GCP_Auth[Authenticate]
+            GCP_Bucket[Upload to bucket]
+            GCP_Perms[Make public]
+            GCP_Install --> GCP_Auth --> GCP_Bucket --> GCP_Perms
+        end
+        subgraph GitHub
+            GH_Upload[Archive as artifact]
+        end 
+        subgraph GitHub Action
+            GH_Install[Install tooling]
+            GH_Action[PDF conversion]
+            GH_Install --> GH_Action
+            GH_Action --> GH_Upload
+            GH_Action --> GCP_Bucket
+        end
+        subgraph Repository
+            Git_File[Local file]
+            Git_File --> GH_Action
+        end
+    end
+```
+This is still a trivial pipeline but represents this demo project.
+
 ## TODO
 
 - Containerize the build (such as with [Earthly](https://earthly.dev/))
