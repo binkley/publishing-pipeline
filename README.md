@@ -17,8 +17,9 @@ align="right" width="10%" height="auto"/>
 3. Save result as a repo artifact.
 4. Save result in a public Google Cloud storage bucket.
 
-See [the pipeline steps in YAML](./.github/workflows/pipeline.yml). <br>
-See [the published PDF conversion in GCP](https://storage.googleapis.com/github-publishing-pipeline/example.pdf).
+See [the published PDF conversion in GCP](https://storage.googleapis.com/github-publishing-pipeline/example.pdf). <br>
+See [the pipeline steps in YAML](./.github/workflows/pipeline.yml), or keep
+reading for diagrams.
 
 ### In pictures
 
