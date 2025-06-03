@@ -14,13 +14,14 @@ align="right" width="10%" height="auto"/>
 
 1. Ingest markdown from project repository.
 2. Transform markdown to PDF.
-3. Save results as a repository artifact.
+3. Save result as a repo artifact.
+4. Save result in a public Google Cloud storage bucket.
 
-See [the pipeline steps in YAML](./.github/workflows.ci.yml).
+See [the pipeline steps in YAML](./.github/workflows.ci.yml). <br>
+See [the published PDF conversion in GCP](https://storage.googleapis.com/github-publishing-pipeline/example.pdf).
 
 ## TODO
 
 - Containerize the build (such as with [Earthly](https://earthly.dev/))
-- Save results in a cloud bucket
 - Ingest from a cloud bucket
 - Transform data in a cloud function
