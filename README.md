@@ -66,6 +66,12 @@ flowchart LR
 ```
 This is still a trivial pipeline but represents this demo project.
 
+## Dev help
+
+If you use chat AI to help you with coding, an example for getting the prompt
+setup is in [`PROMPT_ENGINEERING.md`](./PROMPT_ENGINEERING.md) based on a
+recent chat session.
+
 ## TODO
 
 - Containerize the build (such as with [Earthly](https://earthly.dev/))
