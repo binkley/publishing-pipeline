@@ -71,6 +71,8 @@ This is still a trivial pipeline but represents this demo project.
 If you use chat AI to help you with coding, an example for getting the prompt
 setup is in [`PROMPT_ENGINEERING.md`](./PROMPT_ENGINEERING.md) based on a
 recent chat session.
+You may need to refresh to a new AI chat session when you observe it looping
+or repeating mistakes.
 
 ## TODO
 

@@ -1,3 +1,6 @@
+> You may need to refresh to a new AI chat session when you observe it looping
+> or repeating mistakes.
+
 # Session Starter Checklist for Publishing Pipeline
 
 This document helps anyone resuming work on this project—including future
